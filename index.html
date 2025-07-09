@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo список</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>📋 ToDo-лист</h1>
+    <div class="input-block">
+      <input type="text" id="taskInput" placeholder="Введите задачу">
+      <button id="addTask">+</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="footer">
+      <div id="filter">
+        <button data-filter="all" class="active">Все</button>
+        <button data-filter="active">Активные</button>
+        <button data-filter="completed">Выполненные</button>
+      </div>
+      <div>
+        <button id="clearCompleted" class="small-btn">Очистить выполненные</button>
+        <button id="clearAll" class="small-btn danger">Очистить всё</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
